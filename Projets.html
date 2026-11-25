@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+  <meta name="keywords" content="Création, video, AI,montage">
+  <meta name="description" content="Créatrice de contenue IA">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Portofolio de Nadia</title>
+  
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <header class="navbar">
+      <nav>
+        <a href="index.html" title="Accueil"> Accueil </a>
+        <a href="A_propos.html" title="A_propos"> À propos</a>
+        <a href="Competences.html" title="Compétences"> Compétences</a>
+        <a href="Projets.html" title="Projets"> Projets</a>
+        <a href="Contact.html" title="Contact"> Contact</a>
+      </nav>
+   </header>
+   <section class="projets" id="projets">
+  <h2 class="titre-projets">Mon Portfolio</h2>
+
+  <div class="carrousel-zone">
+    <div class="carrousel" id="carrousel">
+
+      <div class="carte-video">
+   <video controls preload="metadata" poster="miniature6.jpg">
+          <source src="video8.mp4" type="video/mp4">
+        </video>
+  <span class="etiquette">Publicité<br>Mode</span>
+        </video>
+         <span class="etiquette">Vidéo<br>publicitaire</span
+      </div>
+
+      <div class="carte-video">
+        <video controls preload="metadata" poster="miniature5.jpg">
+          <source src="video9.mp4" type="video/mp4">
+        </video>
+         <span class="etiquette">Vidéo<br>publicitaire</span
+      </div>
+
+      
+
+      <div class="carte-video">
+        <video controls preload="metadata" poster="miniature3.jpg">
+          <source src="video6.mp4" type="video/mp4">
+        </video>
+       <span class="etiquette">Vidéo <br>publicitaire</span
+      </div>
+
+      <div class="carte-video">
+        <video controls preload="metadata" poster="miniature1.jpg">
+          <source src="video5.mp4" type="video/mp4">
+        </video>
+         <span class="etiquette">Vidéo<br> publicitaire</span
+      </div>
+
+      <div class="carte-video">
+        <video controls preload="metadata" poster="miniature2.jpg">
+          <source src="video4.mp4" type="video/mp4">
+        </video>
+         <span class="etiquette">Vidéo<br>publicitaire</span
+      </div>
+
+    </div>
+
+    <button class="fleche" id="fleche" aria-label="Voir la suite">&#10095;</button>
+  </div>
+</section>
+
+<script>
+  const carrousel = document.getElementById("carrousel");
+  document.getElementById("fleche").addEventListener("click", () => {
+    carrousel.scrollBy({ left: 300, behavior: "smooth" });
+  });
+</script>
+</body>
+
+</html>
